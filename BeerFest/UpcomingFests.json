@@ -1,0 +1,52 @@
+{
+"festivals" : [
+	{
+	"name" : "Willamette Valley Fresh Hops Fest", 
+	"startDate" : "2012-10-20", 
+	"endDate" : "2012-10-20", 
+	"city" : "Eugene", 
+	"state" : "Oregon", 
+	"country" : "USA", 
+	"latitude" : "44.043735",
+	"longitude" : "-123.109328",
+	"location" : "Lane Events Center", 
+	"festDescription" : "Noon-9pm. $15 for a glass and 5 drink tickets. $20 for a glass and 10 drink tickets. The sixth annual Willamette Valley Fresh Hop Festival will present a unique opportunity to taste craft-brewed beers brewed with Oregon-grown fresh hops (rather than pellets) on Saturday, October 20, 2012 in the Lane Events Center at the Fairgrounds, located at 796 West 13th Avenue, Eugene, Ore. Sponsored by the Wild Duck Cafe, Hop Union, BC Hop Farms, and the Oregon Brewers Guild, the Willamette Valley Fresh Hop Festival will begin at 12 p.m. and end at 9 p.m. Admission includes two options, either $15 at the door, which includes a logo glass and five taste tickets, or $20 at the door, which includes a logo glass and ten taste tickets. Additional taste tickets will be available for purchase. Guests must be 21 years of age or older to attend. For more information about the Willamette Valley Fresh Hop Festival, please visit http://oregonbeer.org/freshhopsfest/  Patrons will be able to taste a wide variety of beers brewed or conditioned with fresh hops grown in the Pacific Northwest brewed with fresh hops, rather than hop pellets, and hop forward brews, which are beers brewed with a generous helping of hops added throughout the boiling process to draw exuberant flavors and aromas from hops, sometimes also dry-hopped to boost the hop aroma."
+	},
+	{
+	"name" : "Holiday Ale Festival", 
+	"startDate" : "2012-11-28", 
+	"endDate" : "2012-12-2", 
+	"city" : "Portland", 
+	"state" : "Oregon", 
+	"country" : "USA", 
+	"latitude" : "45.518786",
+	"longitude" : "-122.679343",
+	"location" : "Pioneer Courthouse Square", 
+	"festDescription" : "The winter season holds many gifts for beer lovers in the form of big, bold ales designed to fend off the cold chill of a long winter's night. Each year, the Holiday Ale Festival annually gathers up dozens of these winter warmers for a joyous five-day celebration. As a result, this quintessential Portland event has earned a reputation as the premier winter beer tasting venue on the West Coast. Held in the heart of downtown Portland, the Holiday Ale Festival keeps attendees warm and dry under a large clear top tent that covers Pioneer Courthouse Square while allowing for views of the city lights. Gas heaters create a cozy ambience under the boughs of one of the region's largest decorated Christmas trees. More than 50 potent winter ales are featured at this year's event, all of which are created specifically to bring warmth and cheer to the holiday season. These aren't beers you'll find in the supermarket - our brewers have put together special recipes just for the Holiday Ale Festival. From Belgians and Barleywines to Stouts and Sours, these beers are rich, robust and full of complex flavors. From November 28th through December 2nd, 2012, come hoist a pint and toast to the spirits of the season. We look forward to seeing you at the Holiday Ale Festival...Cheers!"
+	},
+	{
+	"name" : "Spring Beer Fest", 
+	"startDate" : "2013-4-29", 
+	"endDate" : "2013-4-30", 
+	"city" : "Portland", 
+	"state" : "Oregon", 
+	"country" : "USA", 
+	"latitude" : "45.531636",
+	"longitude" : "-122.661451",
+	"location" : "Oregon Convention Center", 
+	"festDescription" : "The Spring Beer & Wine Fest is known as the nation's largest sampling related, springtime event."
+	},
+	{
+	"name" : "Cheers to Belgian Beers", 
+	"startDate" : "2013-5-4", 
+	"endDate" : "2013-5-4", 
+	"city" : "Portland", 
+	"state" : "Oregon", 
+	"country" : "USA", 
+	"latitude" : "45.531636",
+	"longitude" : "-122.661451",
+	"location" : "Metalcraft Fabrication, 723 N Tillamook", 
+	"festDescription" : "The Portland's Cheers to Belgian Beers festival started in 2007 as a celebration of Belgian style beers. Participating breweries were required to produce beers from the same two strains of yeast and add their own creative spin."
+	}
+]
+}

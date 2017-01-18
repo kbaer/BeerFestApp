@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		396933261631DA2B00F82120 /* UpcomingFests.json in Resources */ = {isa = PBXBuildFile; fileRef = 396933251631DA2B00F82120 /* UpcomingFests.json */; };
+		39C270F2160A86A900DD625C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C270F1160A86A900DD625C /* UIKit.framework */; };
+		39C270F4160A86A900DD625C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C270F3160A86A900DD625C /* Foundation.framework */; };
+		39C270F6160A86A900DD625C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C270F5160A86A900DD625C /* CoreGraphics.framework */; };
+		39C270FC160A86A900DD625C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39C270FA160A86A900DD625C /* InfoPlist.strings */; };
+		39C270FE160A86A900DD625C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C270FD160A86A900DD625C /* main.m */; };
+		39C27102160A86A900DD625C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C27101160A86A900DD625C /* AppDelegate.m */; };
+		39C27104160A86A900DD625C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C27103160A86A900DD625C /* Default.png */; };
+		39C27106160A86A900DD625C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C27105160A86A900DD625C /* Default@2x.png */; };
+		39C27108160A86A900DD625C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C27107160A86A900DD625C /* Default-568h@2x.png */; };
+		39C2710B160A86A900DD625C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C27109160A86A900DD625C /* MainStoryboard_iPhone.storyboard */; };
+		39C2710E160A86A900DD625C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C2710C160A86A900DD625C /* MainStoryboard_iPad.storyboard */; };
+		39C27111160A86A900DD625C /* BeersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C27110160A86A900DD625C /* BeersController.m */; };
+		39C2712C160B8CDF00DD625C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2712B160B8CDF00DD625C /* CoreData.framework */; };
+		39C27137160B9F9C00DD625C /* BeerFestData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39C27135160B9F9C00DD625C /* BeerFestData.xcdatamodeld */; };
+		39C2713A160BCC1900DD625C /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C27139160BCC1900DD625C /* Beer.m */; };
+		39C2713D160BCC4F00DD625C /* Fest.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C2713C160BCC4F00DD625C /* Fest.m */; };
+		39C27176160E5ED200DD625C /* BeerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C27175160E5ED100DD625C /* BeerCell.m */; };
+		39C2717E1611213D00DD625C /* DYRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C2717D1611213D00DD625C /* DYRateView.m */; };
+		39C271811611215100DD625C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 39C2717F1611215100DD625C /* LICENSE */; };
+		39C271821611215100DD625C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 39C271801611215100DD625C /* README.md */; };
+		39C2718B1611222600DD625C /* StarEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C271831611222600DD625C /* StarEmpty.png */; };
+		39C2718C1611222600DD625C /* StarEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C271841611222600DD625C /* StarEmpty@2x.png */; };
+		39C2718D1611222600DD625C /* StarEmptyLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C271851611222600DD625C /* StarEmptyLarge.png */; };
+		39C2718E1611222600DD625C /* StarEmptyLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C271861611222600DD625C /* StarEmptyLarge@2x.png */; };
+		39C2718F1611222600DD625C /* StarFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C271871611222600DD625C /* StarFull.png */; };
+		39C271901611222600DD625C /* StarFull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C271881611222600DD625C /* StarFull@2x.png */; };
+		39C271911611222600DD625C /* StarFullLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C271891611222600DD625C /* StarFullLarge.png */; };
+		39C271921611222600DD625C /* StarFullLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C2718A1611222600DD625C /* StarFullLarge@2x.png */; };
+		39C2719916112AAD00DD625C /* BeerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C2719816112AAD00DD625C /* BeerDetailController.m */; };
+		39C271A71614FF0700DD625C /* HRHopsFest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 39C271A51614F27000DD625C /* HRHopsFest.csv */; };
+		39D0715516288146009475D6 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0714D16288103009475D6 /* Common.m */; };
+		39D0715716288160009475D6 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0715116288104009475D6 /* CustomCellBackground.m */; };
+		39D0715816288165009475D6 /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0715316288104009475D6 /* CustomHeader.m */; };
+		39D07183162CACB8009475D6 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39D0717C162CACB8009475D6 /* Kal.bundle */; };
+		39D07189162CBABD009475D6 /* FestDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D07188162CBABC009475D6 /* FestDataSource.m */; };
+		39D0718C162CC3C5009475D6 /* FestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0718B162CC3C5009475D6 /* FestsViewController.m */; };
+		39D0718F162CDC68009475D6 /* FestDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0718E162CDC66009475D6 /* FestDetailController.m */; };
+		39D07192162DD942009475D6 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D07190162DD93F009475D6 /* calendar.png */; };
+		39D07193162DD942009475D6 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D07191162DD940009475D6 /* calendar@2x.png */; };
+		39D07199162DE206009475D6 /* MyFestsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D07198162DE205009475D6 /* MyFestsController.m */; };
+		39D0719C162DE84C009475D6 /* FestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0719B162DE84B009475D6 /* FestCell.m */; };
+		39D0719E162E1B55009475D6 /* Festivals.json in Resources */ = {isa = PBXBuildFile; fileRef = 39D0719D162E1B55009475D6 /* Festivals.json */; };
+		39D071A0162F338B009475D6 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D07186162CACB8009475D6 /* libKal.a */; };
+		39E54011161E0CDE0043FA32 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E54010161E0CDE0043FA32 /* Social.framework */; };
+		39E5401A161E37F70043FA32 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E54016161E37F70043FA32 /* facebook.png */; };
+		39E5401B161E37F70043FA32 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E54017161E37F70043FA32 /* facebook@2x.png */; };
+		39E5401D161E37F70043FA32 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E54019161E37F70043FA32 /* twitter@2x.png */; };
+		39E5401F161E38A00043FA32 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E5401E161E38A00043FA32 /* twitter.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39D07185162CACB8009475D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39D0717D162CACB8009475D6 /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		396933251631DA2B00F82120 /* UpcomingFests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UpcomingFests.json; sourceTree = "<group>"; };
+		39C270ED160A86A900DD625C /* BeerFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C270F1160A86A900DD625C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39C270F3160A86A900DD625C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39C270F5160A86A900DD625C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39C270F9160A86A900DD625C /* BeerFest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerFest-Info.plist"; sourceTree = "<group>"; };
+		39C270FB160A86A900DD625C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39C270FD160A86A900DD625C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39C270FF160A86A900DD625C /* BeerFest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeerFest-Prefix.pch"; sourceTree = "<group>"; };
+		39C27100160A86A900DD625C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39C27101160A86A900DD625C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39C27103160A86A900DD625C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		39C27105160A86A900DD625C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		39C27107160A86A900DD625C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		39C2710A160A86A900DD625C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		39C2710D160A86A900DD625C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		39C2710F160A86A900DD625C /* BeersController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeersController.h; sourceTree = "<group>"; };
+		39C27110160A86A900DD625C /* BeersController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeersController.m; sourceTree = "<group>"; };
+		39C2712B160B8CDF00DD625C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		39C27136160B9F9C00DD625C /* BeerFestData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeerFestData.xcdatamodel; sourceTree = "<group>"; };
+		39C27138160BCC1900DD625C /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		39C27139160BCC1900DD625C /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		39C2713B160BCC4F00DD625C /* Fest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fest.h; sourceTree = "<group>"; };
+		39C2713C160BCC4F00DD625C /* Fest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fest.m; sourceTree = "<group>"; };
+		39C27174160E5ED100DD625C /* BeerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerCell.h; sourceTree = "<group>"; };
+		39C27175160E5ED100DD625C /* BeerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerCell.m; sourceTree = "<group>"; };
+		39C2717C1611213D00DD625C /* DYRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRateView.h; sourceTree = "<group>"; };
+		39C2717D1611213D00DD625C /* DYRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRateView.m; sourceTree = "<group>"; };
+		39C2717F1611215100DD625C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		39C271801611215100DD625C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		39C271831611222600DD625C /* StarEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarEmpty.png; sourceTree = "<group>"; };
+		39C271841611222600DD625C /* StarEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarEmpty@2x.png"; sourceTree = "<group>"; };
+		39C271851611222600DD625C /* StarEmptyLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarEmptyLarge.png; sourceTree = "<group>"; };
+		39C271861611222600DD625C /* StarEmptyLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarEmptyLarge@2x.png"; sourceTree = "<group>"; };
+		39C271871611222600DD625C /* StarFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarFull.png; sourceTree = "<group>"; };
+		39C271881611222600DD625C /* StarFull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarFull@2x.png"; sourceTree = "<group>"; };
+		39C271891611222600DD625C /* StarFullLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarFullLarge.png; sourceTree = "<group>"; };
+		39C2718A1611222600DD625C /* StarFullLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarFullLarge@2x.png"; sourceTree = "<group>"; };
+		39C2719716112AAD00DD625C /* BeerDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailController.h; sourceTree = "<group>"; };
+		39C2719816112AAD00DD625C /* BeerDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailController.m; sourceTree = "<group>"; };
+		39C271A51614F27000DD625C /* HRHopsFest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HRHopsFest.csv; sourceTree = "<group>"; };
+		39D0714C16288103009475D6 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		39D0714D16288103009475D6 /* Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		39D0715016288103009475D6 /* CustomCellBackground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		39D0715116288104009475D6 /* CustomCellBackground.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		39D0715216288104009475D6 /* CustomHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
+		39D0715316288104009475D6 /* CustomHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
+		39D0717C162CACB8009475D6 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
+		39D0717D162CACB8009475D6 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
+		39D07187162CBABC009475D6 /* FestDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FestDataSource.h; sourceTree = "<group>"; };
+		39D07188162CBABC009475D6 /* FestDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FestDataSource.m; sourceTree = "<group>"; };
+		39D0718A162CC3C4009475D6 /* FestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FestsViewController.h; sourceTree = "<group>"; };
+		39D0718B162CC3C5009475D6 /* FestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FestsViewController.m; sourceTree = "<group>"; };
+		39D0718D162CDC64009475D6 /* FestDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FestDetailController.h; sourceTree = "<group>"; };
+		39D0718E162CDC66009475D6 /* FestDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FestDetailController.m; sourceTree = "<group>"; };
+		39D07190162DD93F009475D6 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		39D07191162DD940009475D6 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		39D07197162DE205009475D6 /* MyFestsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFestsController.h; sourceTree = "<group>"; };
+		39D07198162DE205009475D6 /* MyFestsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFestsController.m; sourceTree = "<group>"; };
+		39D0719A162DE84A009475D6 /* FestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FestCell.h; sourceTree = "<group>"; };
+		39D0719B162DE84B009475D6 /* FestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FestCell.m; sourceTree = "<group>"; };
+		39D0719D162E1B55009475D6 /* Festivals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Festivals.json; sourceTree = "<group>"; };
+		39E54010161E0CDE0043FA32 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		39E54016161E37F70043FA32 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		39E54017161E37F70043FA32 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
+		39E54019161E37F70043FA32 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		39E5401E161E38A00043FA32 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39C270EA160A86A900DD625C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E54011161E0CDE0043FA32 /* Social.framework in Frameworks */,
+				39C2712C160B8CDF00DD625C /* CoreData.framework in Frameworks */,
+				39C270F2160A86A900DD625C /* UIKit.framework in Frameworks */,
+				39C270F4160A86A900DD625C /* Foundation.framework in Frameworks */,
+				39C270F6160A86A900DD625C /* CoreGraphics.framework in Frameworks */,
+				39D071A0162F338B009475D6 /* libKal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39C270E2160A86A900DD625C = {
+			isa = PBXGroup;
+			children = (
+				39C270F7160A86A900DD625C /* BeerFest */,
+				39C270F0160A86A900DD625C /* Frameworks */,
+				39C270EE160A86A900DD625C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39C270EE160A86A900DD625C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39C270ED160A86A900DD625C /* BeerFest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39C270F0160A86A900DD625C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39E54010161E0CDE0043FA32 /* Social.framework */,
+				39C2712B160B8CDF00DD625C /* CoreData.framework */,
+				39C270F1160A86A900DD625C /* UIKit.framework */,
+				39C270F3160A86A900DD625C /* Foundation.framework */,
+				39C270F5160A86A900DD625C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39C270F7160A86A900DD625C /* BeerFest */ = {
+			isa = PBXGroup;
+			children = (
+				39C27100160A86A900DD625C /* AppDelegate.h */,
+				39C27101160A86A900DD625C /* AppDelegate.m */,
+				39C27109160A86A900DD625C /* MainStoryboard_iPhone.storyboard */,
+				39C2710C160A86A900DD625C /* MainStoryboard_iPad.storyboard */,
+				39C2710F160A86A900DD625C /* BeersController.h */,
+				39C27110160A86A900DD625C /* BeersController.m */,
+				39C2719716112AAD00DD625C /* BeerDetailController.h */,
+				39C2719816112AAD00DD625C /* BeerDetailController.m */,
+				39C27174160E5ED100DD625C /* BeerCell.h */,
+				39C27175160E5ED100DD625C /* BeerCell.m */,
+				39D0719A162DE84A009475D6 /* FestCell.h */,
+				39D0719B162DE84B009475D6 /* FestCell.m */,
+				39D07187162CBABC009475D6 /* FestDataSource.h */,
+				39D07188162CBABC009475D6 /* FestDataSource.m */,
+				39D0718A162CC3C4009475D6 /* FestsViewController.h */,
+				39D0718B162CC3C5009475D6 /* FestsViewController.m */,
+				39D0718D162CDC64009475D6 /* FestDetailController.h */,
+				39D0718E162CDC66009475D6 /* FestDetailController.m */,
+				39D07197162DE205009475D6 /* MyFestsController.h */,
+				39D07198162DE205009475D6 /* MyFestsController.m */,
+				39C27131160B9F0D00DD625C /* Models */,
+				39D0717A162CABA4009475D6 /* 3rd Party Libraries */,
+				39C27126160A878500DD625C /* Resources */,
+				39C270F8160A86A900DD625C /* Supporting Files */,
+			);
+			path = BeerFest;
+			sourceTree = "<group>";
+		};
+		39C270F8160A86A900DD625C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39C270F9160A86A900DD625C /* BeerFest-Info.plist */,
+				39C270FA160A86A900DD625C /* InfoPlist.strings */,
+				39C270FD160A86A900DD625C /* main.m */,
+				39C270FF160A86A900DD625C /* BeerFest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39C27126160A878500DD625C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39C271A51614F27000DD625C /* HRHopsFest.csv */,
+				39D0719D162E1B55009475D6 /* Festivals.json */,
+				396933251631DA2B00F82120 /* UpcomingFests.json */,
+				39C27103160A86A900DD625C /* Default.png */,
+				39C27105160A86A900DD625C /* Default@2x.png */,
+				39C27107160A86A900DD625C /* Default-568h@2x.png */,
+				39D07190162DD93F009475D6 /* calendar.png */,
+				39D07191162DD940009475D6 /* calendar@2x.png */,
+				39C271831611222600DD625C /* StarEmpty.png */,
+				39C271841611222600DD625C /* StarEmpty@2x.png */,
+				39C271851611222600DD625C /* StarEmptyLarge.png */,
+				39C271861611222600DD625C /* StarEmptyLarge@2x.png */,
+				39C271871611222600DD625C /* StarFull.png */,
+				39C271881611222600DD625C /* StarFull@2x.png */,
+				39C271891611222600DD625C /* StarFullLarge.png */,
+				39C2718A1611222600DD625C /* StarFullLarge@2x.png */,
+				39E54016161E37F70043FA32 /* facebook.png */,
+				39E54017161E37F70043FA32 /* facebook@2x.png */,
+				39E5401E161E38A00043FA32 /* twitter.png */,
+				39E54019161E37F70043FA32 /* twitter@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		39C27131160B9F0D00DD625C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39C27135160B9F9C00DD625C /* BeerFestData.xcdatamodeld */,
+				39C27138160BCC1900DD625C /* Beer.h */,
+				39C27139160BCC1900DD625C /* Beer.m */,
+				39C2713B160BCC4F00DD625C /* Fest.h */,
+				39C2713C160BCC4F00DD625C /* Fest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		39C2717B1611213D00DD625C /* DYRateView */ = {
+			isa = PBXGroup;
+			children = (
+				39C2717C1611213D00DD625C /* DYRateView.h */,
+				39C2717D1611213D00DD625C /* DYRateView.m */,
+				39C2717F1611215100DD625C /* LICENSE */,
+				39C271801611215100DD625C /* README.md */,
+			);
+			path = DYRateView;
+			sourceTree = "<group>";
+		};
+		39D071541628810C009475D6 /* Custom Cell Background */ = {
+			isa = PBXGroup;
+			children = (
+				39D0714C16288103009475D6 /* Common.h */,
+				39D0714D16288103009475D6 /* Common.m */,
+				39D0715016288103009475D6 /* CustomCellBackground.h */,
+				39D0715116288104009475D6 /* CustomCellBackground.m */,
+				39D0715216288104009475D6 /* CustomHeader.h */,
+				39D0715316288104009475D6 /* CustomHeader.m */,
+			);
+			name = "Custom Cell Background";
+			sourceTree = "<group>";
+		};
+		39D0717A162CABA4009475D6 /* 3rd Party Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				39D0717B162CACA1009475D6 /* Kal Library */,
+				39C2717B1611213D00DD625C /* DYRateView */,
+				39D071541628810C009475D6 /* Custom Cell Background */,
+			);
+			name = "3rd Party Libraries";
+			sourceTree = "<group>";
+		};
+		39D0717B162CACA1009475D6 /* Kal Library */ = {
+			isa = PBXGroup;
+			children = (
+				39D0717C162CACB8009475D6 /* Kal.bundle */,
+				39D0717D162CACB8009475D6 /* Kal.xcodeproj */,
+			);
+			name = "Kal Library";
+			sourceTree = "<group>";
+		};
+		39D0717E162CACB8009475D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39D07186162CACB8009475D6 /* libKal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39C270EC160A86A900DD625C /* BeerFest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C2711F160A86A900DD625C /* Build configuration list for PBXNativeTarget "BeerFest" */;
+			buildPhases = (
+				39C270E9160A86A900DD625C /* Sources */,
+				39C270EA160A86A900DD625C /* Frameworks */,
+				39C270EB160A86A900DD625C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeerFest;
+			productName = BeerFest;
+			productReference = 39C270ED160A86A900DD625C /* BeerFest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39C270E4160A86A900DD625C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ken Baer";
+			};
+			buildConfigurationList = 39C270E7160A86A900DD625C /* Build configuration list for PBXProject "BeerFest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 39C270E2160A86A900DD625C;
+			productRefGroup = 39C270EE160A86A900DD625C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 39D0717E162CACB8009475D6 /* Products */;
+					ProjectRef = 39D0717D162CACB8009475D6 /* Kal.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				39C270EC160A86A900DD625C /* BeerFest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		39D07186162CACB8009475D6 /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = 39D07185162CACB8009475D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39C270EB160A86A900DD625C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C271A71614FF0700DD625C /* HRHopsFest.csv in Resources */,
+				39C270FC160A86A900DD625C /* InfoPlist.strings in Resources */,
+				39C27104160A86A900DD625C /* Default.png in Resources */,
+				39C27106160A86A900DD625C /* Default@2x.png in Resources */,
+				39C27108160A86A900DD625C /* Default-568h@2x.png in Resources */,
+				39C2710B160A86A900DD625C /* MainStoryboard_iPhone.storyboard in Resources */,
+				39C2710E160A86A900DD625C /* MainStoryboard_iPad.storyboard in Resources */,
+				39C271811611215100DD625C /* LICENSE in Resources */,
+				39C271821611215100DD625C /* README.md in Resources */,
+				39C2718B1611222600DD625C /* StarEmpty.png in Resources */,
+				39C2718C1611222600DD625C /* StarEmpty@2x.png in Resources */,
+				39C2718D1611222600DD625C /* StarEmptyLarge.png in Resources */,
+				39C2718E1611222600DD625C /* StarEmptyLarge@2x.png in Resources */,
+				39C2718F1611222600DD625C /* StarFull.png in Resources */,
+				39C271901611222600DD625C /* StarFull@2x.png in Resources */,
+				39C271911611222600DD625C /* StarFullLarge.png in Resources */,
+				39C271921611222600DD625C /* StarFullLarge@2x.png in Resources */,
+				39E5401A161E37F70043FA32 /* facebook.png in Resources */,
+				39E5401B161E37F70043FA32 /* facebook@2x.png in Resources */,
+				39E5401D161E37F70043FA32 /* twitter@2x.png in Resources */,
+				39E5401F161E38A00043FA32 /* twitter.png in Resources */,
+				39D07183162CACB8009475D6 /* Kal.bundle in Resources */,
+				39D07192162DD942009475D6 /* calendar.png in Resources */,
+				39D07193162DD942009475D6 /* calendar@2x.png in Resources */,
+				39D0719E162E1B55009475D6 /* Festivals.json in Resources */,
+				396933261631DA2B00F82120 /* UpcomingFests.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39C270E9160A86A900DD625C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C270FE160A86A900DD625C /* main.m in Sources */,
+				39C27102160A86A900DD625C /* AppDelegate.m in Sources */,
+				39C27111160A86A900DD625C /* BeersController.m in Sources */,
+				39C27137160B9F9C00DD625C /* BeerFestData.xcdatamodeld in Sources */,
+				39C2713A160BCC1900DD625C /* Beer.m in Sources */,
+				39C2713D160BCC4F00DD625C /* Fest.m in Sources */,
+				39C27176160E5ED200DD625C /* BeerCell.m in Sources */,
+				39C2717E1611213D00DD625C /* DYRateView.m in Sources */,
+				39C2719916112AAD00DD625C /* BeerDetailController.m in Sources */,
+				39D0715516288146009475D6 /* Common.m in Sources */,
+				39D0715716288160009475D6 /* CustomCellBackground.m in Sources */,
+				39D0715816288165009475D6 /* CustomHeader.m in Sources */,
+				39D07189162CBABD009475D6 /* FestDataSource.m in Sources */,
+				39D0718C162CC3C5009475D6 /* FestsViewController.m in Sources */,
+				39D0718F162CDC68009475D6 /* FestDetailController.m in Sources */,
+				39D07199162DE206009475D6 /* MyFestsController.m in Sources */,
+				39D0719C162DE84C009475D6 /* FestCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39C270FA160A86A900DD625C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C270FB160A86A900DD625C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		39C27109160A86A900DD625C /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C2710A160A86A900DD625C /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		39C2710C160A86A900DD625C /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C2710D160A86A900DD625C /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39C2711D160A86A900DD625C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39C2711E160A86A900DD625C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39C27120160A86A900DD625C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerFest/BeerFest-Prefix.pch";
+				INFOPLIST_FILE = "BeerFest/BeerFest-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baercode.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		39C27121160A86A900DD625C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerFest/BeerFest-Prefix.pch";
+				INFOPLIST_FILE = "BeerFest/BeerFest-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baercode.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39C270E7160A86A900DD625C /* Build configuration list for PBXProject "BeerFest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C2711D160A86A900DD625C /* Debug */,
+				39C2711E160A86A900DD625C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C2711F160A86A900DD625C /* Build configuration list for PBXNativeTarget "BeerFest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C27120160A86A900DD625C /* Debug */,
+				39C27121160A86A900DD625C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39C27135160B9F9C00DD625C /* BeerFestData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39C27136160B9F9C00DD625C /* BeerFestData.xcdatamodel */,
+			);
+			currentVersion = 39C27136160B9F9C00DD625C /* BeerFestData.xcdatamodel */;
+			path = BeerFestData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39C270E4160A86A900DD625C /* Project object */;
+}

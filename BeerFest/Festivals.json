@@ -1,0 +1,15 @@
+{
+"festivals" : [
+	{
+	"name" : "Hood River Hops Fest", 
+	"startDate" : "2012-09-29", 
+	"endDate" : "2012-09-29", 
+	"city" : "Hood River", 
+	"state" : "Oregon", 
+	"country" : "USA", 
+	"latitude" : "45.710015",
+	"longitude" : "-121.516342",
+	"location" : "Between 5th & 7th Streets and Cascade and Columbia Streets in downtown Hood River.", 
+	"festDescription" : "On the first Saturday of October, Hood River County Chamber of Commerce hosts a beer lover’s dream, when fresh-hopped brews from more than two dozen Northwest craft brewers are on tap. The event showcases Hood River County’s own microbreweries as well as some of the best of the Northwest brewers.An expanded menu of local culinary food, arts and crafts vendors from the Northwest and a day-long lineup of live music guarantee fun for the whole family.  The annual Hops Fest attracts thousands of thirsty visitors. Come taste the best of Hood River County at Hops Fest, which is located between 5th and 9th Street in Hood River from 12pm - 9pm Sept. 29th, 2012.  Learn more at hoodriver.org/events-festivals"}
+]
+}
