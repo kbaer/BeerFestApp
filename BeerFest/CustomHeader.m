@@ -19,7 +19,7 @@
         self.backgroundColor = [UIColor clearColor];
         self.opaque = NO;
         self.titleLabel = [[UILabel alloc] init];
-        _titleLabel.textAlignment = UITextAlignmentCenter;
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.opaque = NO;
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.font = [UIFont boldSystemFontOfSize:20.0];
