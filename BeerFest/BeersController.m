@@ -10,8 +10,6 @@
 #import "Beer.h"
 #import "BeerCell.h"
 #import "BeerDetailController.h"
-#import "CustomCellBackground.h"
-
 
 @interface BeersController ()
 
@@ -33,22 +31,18 @@
 	if (![[self fetchedResultsController] performFetch:&error]) {
 		// Handle the error.
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-		exit(-1);  // Fail
 	}
 	if (![[self ratingResultsController] performFetch:&error]) {
 		// Handle the error.
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-		exit(-1);  // Fail
 	}
 	if (![[self ABVResultsController] performFetch:&error]) {
 		// Handle the error.
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-		exit(-1);  // Fail
 	}
 	if (![[self styleResultsController] performFetch:&error]) {
 		// Handle the error.
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-		exit(-1);  // Fail
 	}
    
    [sortTypeButton addTarget:self
@@ -58,14 +52,6 @@
 
 - (void)viewWillAppear {
 	[self.tableView reloadData];
-}
-
-- (void)viewDidUnload {
-	// Release any properties that are loaded in viewDidLoad or can be recreated lazily.
-	self.fetchedResultsController = nil;
-   self.ratingResultsController = nil;
-   self.ABVResultsController = nil;
-   self.styleResultsController = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -129,11 +115,6 @@
       cell = [[BeerCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
    }
    
-   if (cell.backgroundView == nil)
-      cell.backgroundView = [[CustomCellBackground alloc] init];
-   if (cell.selectedBackgroundView)
-      cell.selectedBackgroundView = [[CustomSelectedCellBackground alloc] init];
-
    // Configure the cell to show the book's title
 	Beer *beer;
    switch ([sortTypeButton selectedSegmentIndex]) {
@@ -183,58 +164,6 @@
          return nil;
    }
 }
-
-/*
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)myTableView {
-   return [collation sectionIndexTitles];
-}
-
-- (NSInteger)tableView:(UITableView *)myTableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
-   return [collation sectionForSectionIndexTitleAtIndex:index];
-}
-
-- (void)configureSections {
-	
-	// Get the current collation and keep a reference to it.
-	self.collation = [UILocalizedIndexedCollation currentCollation];
-	
-	NSInteger index, sectionTitlesCount = [[collation sectionTitles] count];
-	
-	NSMutableArray *newSectionsArray = [[NSMutableArray alloc] initWithCapacity:sectionTitlesCount];
-	
-	// Set up the sections array: elements are mutable arrays that will contain the pubs for that section.
-	for (index = 0; index < sectionTitlesCount; index++) {
-		NSMutableArray *array = [[NSMutableArray alloc] init];
-		[newSectionsArray addObject:array];
-	}
-	
-	// Segregate the pubs into the appropriate arrays.
-   id brewery;
-	for (brewery in [_fetchedResultsController sections]) {
-		
-		NSInteger sectionNumber = [collation sectionForObject:brewery collationStringSelector:@selector(name)];
-		
-		// Get the array for the section.
-		NSMutableArray *beers = [newSectionsArray objectAtIndex:sectionNumber];
-		
-//		[breweries addObject:breweryName];
-	}
-	
-	// Now that all the data's in place, each section array needs to be sorted.
-	for (index = 0; index < sectionTitlesCount; index++) {
-		
-		NSMutableArray *beersArrayForSection = [newSectionsArray objectAtIndex:index];
-		
-		// If the table view or its contents were editable, you would make a mutable copy here.
-		NSArray *sortedBeersArrayForSection = [collation sortedArrayFromArray:beersArrayForSection collationStringSelector:@selector(name)];
-		
-		// Replace the existing array with the sorted array.
-		[newSectionsArray replaceObjectAtIndex:index withObject:sortedBeersArrayForSection];
-	}
-	
-	self.sectionsArray = newSectionsArray;
-}
-*/
 
 - (void)tableView:(UITableView *)myTableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
 }
@@ -298,23 +227,23 @@
    
    AppDelegate *delegate = [AppDelegate sharedInstance];
    
-	// Create and configure a fetch request with the Beer entity.
-	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Beer" inManagedObjectContext:delegate.managedObjectContext];
-	[fetchRequest setEntity:entity];
-	
-	// Create the sort descriptors array.
-	NSSortDescriptor *breweryDescriptor = [[NSSortDescriptor alloc] initWithKey:@"brewerName" ascending:YES];
-	NSSortDescriptor *beerDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-	NSArray *sortDescriptors = @[breweryDescriptor, beerDescriptor];
-	[fetchRequest setSortDescriptors:sortDescriptors];
-	
-	// Create and initialize the fetch results controller.
-	NSFetchedResultsController *aFetchedResultsController = (NSFetchedResultsController *)[[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:delegate.managedObjectContext sectionNameKeyPath:@"brewerName" cacheName:@"Breweries"];
-	self.fetchedResultsController = aFetchedResultsController;
-	_fetchedResultsController.delegate = self;
-		
-	return _fetchedResultsController;
+    // Create and configure a fetch request with the Beer entity.
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Beer" inManagedObjectContext:delegate.managedObjectContext];
+    [fetchRequest setEntity:entity];
+
+    // Create the sort descriptors array.
+    NSSortDescriptor *breweryDescriptor = [[NSSortDescriptor alloc] initWithKey:@"brewerName" ascending:YES];
+    NSSortDescriptor *beerDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    NSArray *sortDescriptors = @[breweryDescriptor, beerDescriptor];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+
+    // Create and initialize the fetch results controller.
+    NSFetchedResultsController *aFetchedResultsController = (NSFetchedResultsController *)[[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:delegate.managedObjectContext sectionNameKeyPath:@"brewerName" cacheName:@"Breweries"];
+    self.fetchedResultsController = aFetchedResultsController;
+    _fetchedResultsController.delegate = self;
+
+    return _fetchedResultsController;
 }
 
 - (NSFetchedResultsController *)ABVResultsController {

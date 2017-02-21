@@ -12,11 +12,6 @@
 
 @interface MyFestsController : UITableViewController
 {
-   NSDate *date;
 }
-
-@property (nonatomic, strong) FestDataSource *dataSource;
-
-- (IBAction)showFestCalendar;
 
 @end

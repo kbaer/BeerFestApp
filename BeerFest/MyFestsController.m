@@ -7,8 +7,6 @@
 //
 
 #import "MyFestsController.h"
-#import "FestsViewController.h"
-#import "FestDataSource.h"
 
 
 @interface MyFestsController ()
@@ -16,8 +14,6 @@
 @end
 
 @implementation MyFestsController
-
-@synthesize dataSource;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,7 +33,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-   dataSource = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,7 +68,17 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    // Return the number of rows in the section.
-    return 1;
+    
+    switch (section) {
+        case 0:
+        return 0;
+        
+        case 1:
+        return 1;
+        
+        default:
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -100,18 +105,5 @@
 }
 
 #pragma mark - Actions
-
-- (void)showFestCalendar
-{
-   date = (NSDate *)[NSDate date];
-   FestsViewController *vc = [[FestsViewController alloc] initWithSelectedDate:date];
-   if (!dataSource) {
-      FestDataSource *festDataSource = [[FestDataSource alloc] init];
-      [self setDataSource:festDataSource];
-   }
-   [vc setDelegate:vc];
-   vc.navigationItem.title = @"Fest Calendar";
-   [self.navigationController pushViewController:vc animated:YES];
-}
 
 @end
