@@ -347,11 +347,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqS-MR-gLI">
-                                <rect key="frame" x="66" y="182" width="242" height="138"/>
+                                <rect key="frame" x="66" y="182" width="242" height="203"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="242" id="lGx-vk-Qgq"/>
-                                    <constraint firstAttribute="height" constant="138" id="nDR-Bt-LBF"/>
+                                    <constraint firstAttribute="height" constant="203" id="nDR-Bt-LBF"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -401,8 +401,12 @@
                                     <action selector="toggleTap:" destination="v8I-bb-9pO" eventType="touchUpInside" id="fUn-Rd-Bih"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Tap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWm-IE-vGE">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWm-IE-vGE">
                                 <rect key="frame" x="77" y="574" width="35" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="1nC-2B-x12"/>
+                                    <constraint firstAttribute="width" constant="35" id="9y0-KZ-Ptb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -414,7 +418,7 @@
                                 </connections>
                             </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xE-WH-ijV" customClass="DYRateView">
-                                <rect key="frame" x="0.0" y="372" width="375" height="159"/>
+                                <rect key="frame" x="0.0" y="393" width="375" height="138"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Highlight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAX-Sm-Gej">
@@ -460,7 +464,7 @@
                             <constraint firstItem="uWm-IE-vGE" firstAttribute="leading" secondItem="FDh-Q1-tbK" secondAttribute="leading" constant="77" id="InL-Q4-9Rf"/>
                             <constraint firstItem="rrg-vC-Xbk" firstAttribute="leading" secondItem="xve-kc-pmn" secondAttribute="trailing" constant="8" symbolic="YES" id="IuM-Ac-PCJ"/>
                             <constraint firstItem="yqS-MR-gLI" firstAttribute="top" secondItem="hzH-jr-ZN7" secondAttribute="bottom" constant="8" symbolic="YES" id="Jfa-i6-bms"/>
-                            <constraint firstItem="3xE-WH-ijV" firstAttribute="top" secondItem="FDh-Q1-tbK" secondAttribute="top" constant="372" id="LeV-wc-dbH"/>
+                            <constraint firstItem="3xE-WH-ijV" firstAttribute="top" secondItem="FDh-Q1-tbK" secondAttribute="top" constant="393" id="LeV-wc-dbH"/>
                             <constraint firstItem="ey3-rY-rxS" firstAttribute="top" secondItem="fi5-nx-dmG" secondAttribute="bottom" constant="8" symbolic="YES" id="Mel-VY-Slw"/>
                             <constraint firstItem="ey3-rY-rxS" firstAttribute="leading" secondItem="GAX-Sm-Gej" secondAttribute="trailing" constant="7" id="Nwt-9T-uyM"/>
                             <constraint firstAttribute="bottom" secondItem="3xE-WH-ijV" secondAttribute="bottom" constant="136" id="PDq-fJ-eHm"/>

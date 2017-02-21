@@ -301,6 +301,11 @@
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ken Baer";
+				TargetAttributes = {
+					39C270EC160A86A900DD625C = {
+						DevelopmentTeam = 98TTG6324Z;
+					};
+				};
 			};
 			buildConfigurationList = 39C270E7160A86A900DD625C /* Build configuration list for PBXProject "BeerFest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -497,6 +502,7 @@
 		39C27120160A86A900DD625C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 98TTG6324Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -514,6 +520,7 @@
 		39C27121160A86A900DD625C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 98TTG6324Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
